@@ -1,0 +1,53 @@
+.sidebar {
+  width: 245px;
+  background-color: #ffffff; /* Set background color to white */
+  padding: 14px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid #ddd; /* Add a subtle border for separation */
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333333; /* Set a dark color for text */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px; /* Add rounded corners to items */
+}
+
+.sidebar li.active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.sidebar li:hover {
+  background-color: #f1f1f1; /* Slightly lighter color on hover */
+}
+
+.logout-button {
+  margin-top: auto;
+  width: 100%; /* Full width for better visibility */
+  background-color: #f8ca00;
+  color: #ffffff;
+  border: none;
+  padding: 10px; /* Ensure enough padding */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #e0b300; /* Slightly darker on hover */
+}

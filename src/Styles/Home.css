@@ -1,0 +1,30 @@
+.home-container {
+  display: flex;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  background-color: #fff;
+}
+
+.content {
+  flex: 1;
+  margin-left: 250px; /* Adjust according to sidebar width */
+  padding: 16px;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  height: 100vh; /* Fill the viewport height */
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 32px;
+}

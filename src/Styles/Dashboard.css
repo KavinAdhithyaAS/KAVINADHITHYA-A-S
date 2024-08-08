@@ -1,0 +1,113 @@
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: white;
+    color: #090000;
+    padding: 20px;
+    position: fixed; /* Fixes the sidebar to the left */
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    color: #141310;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar li.active,
+  .sidebar li:hover {
+    background-color: #f8ca00;
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #f8ca00;
+  }
+  
+  .dashboard-content {
+    margin-left: 250px; /* Ensures content starts after the sidebar */
+    padding: 40px;
+    background-color: #f8ca00;
+    width: calc(100% - 250px); /* Ensures the content takes up the remaining width */
+    overflow-y: auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .sort-button,
+  .add-order-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+  }
+  
+  .sort-button:hover,
+  .add-order-button:hover {
+    background-color: #555;
+  }
+  
+  .orders-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-item p {
+    margin: 5px 0;
+  }
+  

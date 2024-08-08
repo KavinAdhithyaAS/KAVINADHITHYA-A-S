@@ -1,0 +1,234 @@
+Reset default margins and paddings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container for app layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #f8ca00;
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background-color: #f8ca00;
+  color: #333;
+}
+
+/* Logout button styling */
+.logout-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: #f8ca00;
+}
+
+/* Content area styling */
+.content {
+  margin-left: 250px;
+  padding: 40px;
+  width: calc(100% - 250px);
+  overflow-y: auto;
+}
+
+/* Styling for article and tabs */
+.article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Tabs styling */
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab-label {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-label.active {
+  background-color: #f8ca00;
+  color: #333;
+}
+
+.tab__content {
+  display: none;
+}
+
+.tab__content.active {
+  display: block;
+}
+
+.sub-tabs {
+  margin-bottom: 20px;
+}
+
+.sub-tabs button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sub-tabs .active-subtab {
+  background-color: #f8ca00;
+  color: #333;
+}
+
+/* Camera and notes sections */
+.camera-section,
+.notes-section {
+  margin-top: 20px;
+}
+
+.camera-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.capture-button,
+.open-camera-button,
+.close-camera-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.capture-button {
+  background-color: #f8ca00;
+  color: #fff;
+}
+
+.capture-button:hover {
+  background-color: #e0b700;
+}
+
+.open-camera-button,
+.close-camera-button {
+  background-color: #444;
+  color: #fff;
+}
+
+.open-camera-button:hover,
+.close-camera-button:hover {
+  background-color: #f8ca00;
+}
+
+.captured-image {
+  display: block;
+  margin: 10px 0;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Notes section styling */
+.notes-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.save-notes-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8ca00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-notes-button:hover {
+  background-color: #e0b700;
+}
+
+.notes-display {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
